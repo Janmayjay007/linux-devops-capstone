@@ -183,3 +183,13 @@ curl http://localhost   # returns the nginx welcome page — confirmed working
 - Enable a real health-check endpoint rather than relying on `systemctl status` alone
 - Configure `journald`/log rotation limits up front, since `/var/log/journal` was already one of the largest consumers of disk on this VM
 - Use `du -x` by default when auditing disk usage on systems with Snap or other mounted-filesystem package managers
+
+## Planned Additions
+
+> [!NOTE]
+> **Prometheus + Grafana monitoring dashboard** — deliberately not included yet.
+> This stack is scheduled for after the Docker and Kubernetes modules of my
+> learning roadmap, since Prometheus/Grafana are typically deployed as
+> containers (often inside Kubernetes) in real production environments.
+> Building it earlier would mean copy-pasting a setup I couldn't fully
+> explain — so it's sequenced deliberately, not skipped.
